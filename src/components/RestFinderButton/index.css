@@ -1,0 +1,50 @@
+.button-base {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.26);
+    background-color: white;
+    color: #565656;
+    transition: background-color .3s;
+    cursor: pointer;
+    transition: width .5s;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .button-base:hover {
+        width: 170px;
+        transition: width .5s;
+    }
+}
+
+.button-icon {
+    float: none;
+    margin: auto;
+    transition: float .5s;
+}
+
+.button-label {
+    display: none;
+    letter-spacing: 1px;
+}
+
+.fadeIn {
+    animation: fadeIn .5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,107 @@
+.form-base {
+    width: 95%;
+    height: 100%;
+    padding: 0;
+    border-width: 0;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.26);
+    background-color: white;
+    color: #565656;
+    transition: background-color .3s;
+    margin: auto;
+}
+
+.form-section {
+    margin: 3%;
+}
+
+.form-list {
+    width: auto;
+    height: auto;
+    max-height: 230px;
+    border: 1px solid rgba(128, 128, 128, 0.377);
+    border-radius: 5px;
+    padding: 1%;
+    overflow-y: scroll;
+}
+
+.form-list input[type="checkbox"] {
+    appearance: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .form-list div {
+        font-size: 20px;
+        margin: 1% 1% 1% 1%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form-list div {
+        font-size: 12px;
+        margin: 1% 1% 1% 1%;
+        cursor: pointer;
+    }
+}
+
+.form-list tr {
+    cursor: pointer;
+}
+
+.form-list tr:hover {
+    background-color: rgba(164, 202, 189, 0.418);
+}
+
+.form-list .error {
+    margin-top: 5%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+@media only screen and (min-width: 1000px) {
+    .form-section .form-options {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        width: 100%;
+    }
+}
+
+.form-section .form-options {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
+
+.form-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.form-subtitle {
+    font-size: 17px;
+}
+
+.form-content {
+    padding: 1%;
+}
+
+.selection {
+    width: fit-content;
+    margin-left: 10%;
+    font-size: 17px;
+    border-width: 0;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+    background-color: white;
+    color: #565656;
+    transition: background-color .3s;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    font-size: 20px;
+    border: none;
+}
