@@ -166,7 +166,8 @@ class Map extends PureComponent<any, {}> {
                 restList.push(
                     {
                         place_id: results[i].place_id,
-                        name: this.buildListItem(results[i].name, rating, avail),
+                        name: results[i].name,
+                        display: this.buildListItem(results[i].name, rating, avail),
                         rating: rating,
                         isAvail: avail,
                         marker: this.placeMarker(results[i]),

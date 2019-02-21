@@ -45,7 +45,7 @@ class RestFinderForm extends PureComponent<any, {}> {
             let rest: any = this.state.restList[id];
             list.push(
                 <div key={id} onClick={() => this.onListItemClick(rest.marker)}>
-                    <label>{rest.name}</label>
+                    <label>{rest.display}</label>
                     <input type="checkbox" />
                 </div>
             )
